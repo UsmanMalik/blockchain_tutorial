@@ -1,3 +1,15 @@
+// // Allows us to use ES6 in our migrations and tests.
+// require('babel-register')
+//
+// module.exports = {
+//   networks: {
+//     development: {
+//       host: '127.0.0.1',
+//       port: 7545,
+//       network_id: '*' // Match any network id
+//     }
+//   }
+// }
 // Allows us to use ES6 in our migrations and tests.
 require('babel-register')
 
@@ -6,6 +18,7 @@ module.exports = {
     development: {
       host: '127.0.0.1',
       port: 7545,
+      gas: 6600000,
       network_id: '*' // Match any network id
     }
   }
